@@ -1,5 +1,5 @@
 resource "github_repository" "repo" {
-  name        = "example-repository"
-  description = "An example repository created with Terraform"
-  private     = true
+  name        = var.repository_name
+  description = var.repository_description
+  private     = var.repository_private
 }
